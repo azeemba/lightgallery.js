@@ -22,12 +22,13 @@
 })();
 
 import utils from './lg-utils';
-window.utils = utils;
-window.lgData = {
-    uid: 0
-};
+import thumbnail from './lg-thumbnail';
+import video from './lg-video';
+import zoom from './lg-zoom';
 
-window.lgModules = {};
+window.utils = utils;
+
+
 var defaults = {
 
     mode: 'lg-slide',

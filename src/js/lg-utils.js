@@ -1,4 +1,8 @@
 
+window.lgModules = {};
+window.lgData = {
+    uid: 0
+};
 var utils = {
     getAttribute: function(el, label) {
         return el[label];
