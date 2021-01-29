@@ -1177,7 +1177,6 @@ Plugin.prototype.enableSwipe = function() {
             /*jshint loopfunc: true */
             utils.on(_this.___slide[i], 'touchstart.lg', function(e) {
                 if (!utils.hasClass(_this.outer, 'lg-zoomed') && !_this.lgBusy) {
-                    e.preventDefault();
                     _this.manageSwipeClass();
                     startCoords = e.targetTouches[0].pageX;
                 }
@@ -1334,19 +1333,18 @@ Plugin.prototype.closeGallery = function() {
 
         // If you drag the slide and release outside gallery gets close on chrome
         // for preventing this check mousedown and mouseup happened on .lg-item or lg-outer
-        utils.on(_this.outer, 'mousedown.lg', function(e) {
+        // utils.on(_this.outer, 'mousedown.lg', function(e) {
 
-            if (utils.hasClass(e.target, 'lg-outer') || utils.hasClass(e.target, 'lg-item') || utils.hasClass(e.target, 'lg-img-wrap')) {
-                mousedown = true;
-            } else {
-                mousedown = false;
-            }
+        //     if (utils.hasClass(e.target, 'lg-outer') || utils.hasClass(e.target, 'lg-item') || utils.hasClass(e.target, 'lg-img-wrap')) {
+        //         mousedown = true;
+        //     } else {
+        //         mousedown = false;
+        //     }
 
-        });
+        // });
 
         utils.on(_this.outer, 'mouseup.lg', function(e) {
-
-            if (utils.hasClass(e.target, 'lg-outer') || utils.hasClass(e.target, 'lg-item') || utils.hasClass(e.target, 'lg-img-wrap') && mousedown) {
+            if (utils.hasClass(e.target, 'lg-outer') || utils.hasClass(e.target, 'lg-item') || utils.hasClass(e.target, 'lg-img-wrap')) {
                 if (!utils.hasClass(_this.outer, 'lg-dragging')) {
                     _this.destroy();
                 }
