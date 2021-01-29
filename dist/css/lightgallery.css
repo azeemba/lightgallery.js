@@ -424,10 +424,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .lg-outer .lg-video {
   width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
   overflow: hidden;
-  position: relative;
 }
 
 .lg-outer .lg-video .lg-object {
@@ -436,7 +433,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   top: 0;
   left: 0;
   width: 100% !important;
-  height: 100% !important;
+  height: 80% !important;
 }
 
 .lg-outer .lg-video .lg-video-play {
@@ -482,7 +479,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .lg-outer .lg-video-object {
   width: 100% !important;
-  height: 100% !important;
+  height: 80% !important;
   position: absolute;
   top: 0;
   left: 0;
