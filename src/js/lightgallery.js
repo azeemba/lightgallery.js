@@ -1057,11 +1057,7 @@ Plugin.prototype.keyPress = function() {
     utils.on(window, 'keydown.lg', function(e) {
         if (_this.s.escKey === true && e.keyCode === 27) {
             e.preventDefault();
-            if (!utils.hasClass(_this.outer, 'lg-thumb-open')) {
-                _this.destroy();
-            } else {
-                utils.removeClass(_this.outer, 'lg-thumb-open');
-            }
+            _this.destroy();
         }
     });
 };

@@ -1,5 +1,5 @@
 /**!
- * lightgallery.js | 1.4.1-beta.0 | October 29th 2020
+ * lightgallery.js | 1.4.1-beta.0 | January 28th 2021
  * http://sachinchoolur.github.io/lightgallery.js/
  * Copyright (c) 2016 Sachin N; 
  * @license GPLv3 
